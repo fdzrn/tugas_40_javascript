@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tugas 40 |DOM JS</title>
+</head>
+<body>
+	<button type="button" onclick="tugas40()">Jalankan</button>
+	<br>
+	<br>
+	<br>
+	<b>Base URI </b> Property : <br>
+	<p id="satu">contoh</p>
+	<hr>
+	<b>Body</b> Property : <br>
+	<p id="dua">contoh</p>
+	<hr>
+	<b>Create</b> Element : <br><br>
+	<script>
+		function tugas40() {
+			let a = document.baseURI;
+			document.getElementById('satu').innerHTML = a;
+			let b = document.body.style.backgroundColor = 'green';
+			document.getElementById('dua').innerHTML = 'color : green';
+			let c = document.createElement('input');
+			document.body.appendChild(c);
+			
+		}
+	</script>
+</body>
+</html>
